@@ -7,7 +7,7 @@
     info 를 입력받아 환경 바깥에서 별도로 계산한다.
 
 상태 표현 (경로 A 반영):
-    state = (row, col, wall_up, wall_down, wall_left, wall_right)
+    state = (wall_up, wall_down, wall_left, wall_right)
 
     (row, col)는 절대 좌표이고, wall_up/down/left/right는 현재 위치를
     기준으로 상/하/좌/우 방향에 벽(또는 격자 경계)이 있는지를 나타내는
@@ -85,9 +85,9 @@ class GridWorldEnv:
         return int(wall_up), int(wall_down), int(wall_left), int(wall_right)
 
     def _make_state(self, pos):
-        """(row, col, wall_up, wall_down, wall_left, wall_right) 튜플을 만든다."""
+        """(wall_up, wall_down, wall_left, wall_right) 튜플을 만든다."""
         wu, wd, wl, wr = self._local_walls(pos)
-        return (pos[0], pos[1], wu, wd, wl, wr)
+        return (wu, wd, wl, wr)
 
     def step(self, action):
         """

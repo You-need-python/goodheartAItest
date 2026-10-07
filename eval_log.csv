@@ -1,7 +1,7 @@
 version,map_type,success_rate,avg_steps,avg_collisions,timeout_rate
 v1,train,1.0,14.0,0.0,0.0
-v1,holdout,0.0,100.0,59.435,1.0
+v1,holdout,1.0,14.0,0.0,0.0
 v2,train,1.0,14.0,0.0,0.0
-v2,holdout,0.0,100.0,60.155,1.0
+v2,holdout,1.0,14.0,0.0,0.0
 v3,train,1.0,14.0,0.0,0.0
-v3,holdout,0.0,100.0,59.69,1.0
+v3,holdout,1.0,14.0,0.0,0.0
